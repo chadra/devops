@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  dversion:
+    build: .
+
+  test:
+    build: test
+    volumes:
+      - .:/src
